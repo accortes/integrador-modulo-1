@@ -17,8 +17,8 @@ public class ServiciosComputadora implements ICRUD {
     }
     
     @Override
-    public LinkedList delete() {
-        ListaDeCompus.remove();
+    public LinkedList delete(int opcion2) {
+        ListaDeCompus.remove(opcion2);
         return ListaDeCompus;
     }
 }  

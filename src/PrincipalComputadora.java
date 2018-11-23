@@ -38,7 +38,9 @@ public class PrincipalComputadora {
                 case 3:
                     break;
                 case 4:
-                    LinkedList ListaDeCompus2 = servicios.delete();
+                    System.out.println("Escribe el Numero de la computadora que quieres eliminar");
+                    int opcion2 = scanInt.nextInt();
+                    LinkedList ListaDeCompus2 = servicios.delete(opcion2);
                     System.out.println("Has borrado tu lista");
                     break;
                 default:
